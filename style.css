@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-ul { list-style: none; padding-left: 5px; }
+/* ul { list-style: none; padding-left: 5px; } */
 a { color:blue; text-decoration: none;}
 .bar {
     background-color: #f9f9fb;
@@ -33,13 +33,42 @@ a { color:blue; text-decoration: none;}
 .sidebar {
     border-right: solid 1px #cdcdcd;
 }
-figure {
-    text-align: center;
-}
 
 .details_content {
     float: right;
     margin-left: 1rem;
     border: 2px solid #cdcdcd;
+    padding: 10px;
+}
+
+.episodio_container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.episodio_poster {
+    float: right;
+    text-align: center;
+}
+
+.episodio_poster img {
+    width: 150px;
+    height: auto;
+    margin-left: 2rem;
+}
+
+#tabela_trilha thead {
+    text-align: center;
+    th {
+        border: 1px solid #cdcdcd;
+        padding: 10px;
+        background-color: #f2f2f2;
+    }
+}
+
+#tabela_trilha td{
+    text-align: left;
+    border: 1px solid #cdcdcd;
     padding: 10px;
 }

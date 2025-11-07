@@ -2,6 +2,20 @@ header {
     background: var(--destaque-bonnie);
 }
 
+header a, header details summary {
+    color: var(--texto);
+    font-weight: 500;
+}
+
+header a:hover, header details summary:hover {
+    color: var(--destaque-emi);
+    text-decoration: none;
+}
+
+header .logo a:hover {
+    color: var(--texto);
+}
+
 h1 {
     text-align: center;
     font-size: 2rem;

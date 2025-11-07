@@ -17,14 +17,17 @@ header .logo {
     font-weight: 700;
 }
 
-.nav_mobile {
+.nav-mobile {
     color: var(--texto);
     cursor: pointer;
     padding: 0 1rem;
-    position: relative;
     width: 24px;
     height: 24px;
-    
+}
+
+.nav-icons {
+    position: relative;
+
     i {
         position: absolute;
         top: 0;
@@ -41,7 +44,7 @@ header .logo {
     }
 }
 
-.nav_mobile.toggle {
+.nav-icons.toggle {
     .fa-bars {
         opacity: 0;
         transform: rotate(180deg);
@@ -53,36 +56,34 @@ header .logo {
     }
 }
 
-
-.nav_desktop {
+.nav-mobile_lista {
     position: absolute;
-    top: 78px;
+    top: 100%;
+    left: 1rem;
     right: 0;
-    width: 90%;
+    padding: 0.5rem 1rem;
+    
     background-color: var(--background-sombra);
-    padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 3;
+    list-style: none;
 }
 
-
-.nav_desktop .decoration {
+.nav-mobile_lista .decoration {
     color: var(--background-sombra);
     position: absolute;
     top: 0;
-    right: 2rem;
-    transform: translateY(-50%);
+    right: 1rem;
     font-size: 1.5rem;
+    transform: translateY(-50%);
+    margin: 0;
 }
 
-.nav_desktop ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.nav-mobile_lista li {
+    margin: 0.5rem 0;
 }
 
-.nav_desktop ul li a {
+.nav-mobile_lista li a {
     color: var(--texto);
     font-weight: 500;
     transition: color 0.3s;

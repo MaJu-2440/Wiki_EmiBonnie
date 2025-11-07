@@ -23,6 +23,12 @@ a {
     color: var(--texto);
 }
 
-a:hover {
+a:hover, .nav-desktop_lista details ul a:hover {
     color: var(--destaque-emi);
+}
+
+.nav-desktop_lista a:hover,
+.nav-desktop_lista summary:hover {
+ color: var(--background-dark);
+ 
 }
